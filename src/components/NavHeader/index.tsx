@@ -8,6 +8,7 @@ import { Button, Dropdown, Grid } from "antd";
 import { Header } from "antd/es/layout/layout";
 import { MenuOutlined } from "@ant-design/icons";
 import { MenuItemType } from "antd/es/menu/hooks/useItems";
+import { useNavigate } from "react-router-dom";
 
 //Header Right Items
 const items: MenuItemType[] = [
@@ -69,9 +70,13 @@ const NavHeader: FC = () => {
   //state to control Dropdown
   const [visible, setVisible] = useState(false);
 
+  const navigate = useNavigate();
+
   return (
     <Header className={styles.naviHeader}>
-      <div className={styles.left}>Brainwave.io</div>
+      <div className={styles.left} onClick={() => navigate("/")}>
+        Brainwave.io
+      </div>
       <div className={styles.right}>
         {screens.md ? (
           items.map((item, index) => (
