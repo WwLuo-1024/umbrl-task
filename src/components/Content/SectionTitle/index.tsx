@@ -3,11 +3,10 @@
  * @author Luo Wang
  */
 import React, { FC } from "react";
-import { Row, Col, Typography } from "antd";
+import { Row, Col } from "antd";
 import styles from "./index.module.less";
 import { SectionTilteTypes } from "@/types";
 
-const { Title, Paragraph } = Typography;
 type PropsType = {
   data: SectionTilteTypes;
 };
@@ -18,20 +17,18 @@ const SectionTilte: FC<PropsType> = (props: PropsType) => {
     <div className={styles.sectionTilte}>
       <Row justify="center">
         <Col xs={22} sm={20} md={16} lg={12}>
-          <Title style={{ textAlign: "center" }}>{title}</Title>
+          <p className={styles.title}>{title}</p>
           {subTitle?.map((item, index) => {
             return (
-              <Paragraph
+              <p
                 key={index}
+                className={styles.paragraph}
                 style={{
-                  color: "#161C2D",
-                  fontWeight: "400",
-                  textAlign: "center",
                   marginBottom: index !== subTitle.length - 1 ? 0 : undefined,
                 }}
               >
                 {item}
-              </Paragraph>
+              </p>
             );
           })}
         </Col>

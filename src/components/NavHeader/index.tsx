@@ -78,7 +78,7 @@ const NavHeader: FC = () => {
         Brainwave.io
       </div>
       <div className={styles.right}>
-        {screens.md ? (
+        {screens.lg ? (
           items.map((item, index) => (
             <Button
               style={{

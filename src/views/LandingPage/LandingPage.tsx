@@ -19,6 +19,7 @@ import { loadData } from "@/store/pricingReducer";
 
 const LandingPage: FC = () => {
   const dispatch = useDispatch();
+  //Redux Load Data
   useEffect(() => {
     dispatch(loadData(pricingDataMonth));
   }, []);
