@@ -5,7 +5,8 @@
 import React from "react";
 import { ConfigProvider, App as AntdApp } from "antd";
 import "./App.less";
-import LandingPage from "./views/LandingPage/LandingPage";
+import { RouterProvider } from "react-router-dom";
+import router from "./router";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       }}
     >
       <AntdApp>
-        <LandingPage />
+        <RouterProvider router={router} />
       </AntdApp>
     </ConfigProvider>
   );
