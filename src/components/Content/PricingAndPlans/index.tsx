@@ -10,11 +10,11 @@ import {
   CheckOutlined,
   CloseOutlined,
 } from "@ant-design/icons";
-import { formatMoney } from "@/utils";
 import { useSelector, useDispatch } from "react-redux";
 import { StateType } from "@/store";
 import { PricingDataType, loadData } from "@/store/pricingReducer";
 import { pricingDataMonth, pricingDataYear } from "@/utils/constants";
+// import { formatMoney } from "@/utils";
 const { Text } = Typography;
 
 const PricingSection: FC = () => {
@@ -60,18 +60,21 @@ const PricingSection: FC = () => {
 
         {/* Cards */}
         {pricingDataList.map((item, index) => (
-          <Col key={index} xs={24} sm={12} md={8}>
+          <Col key={index} xs={22} sm={20} md={16} lg={8}>
             <Card hoverable className={styles.pricingCard}>
               <Text className={styles.pricingTitle}>{item.plan}</Text>
-              <div style={{ display: "flex", alignItems: "center" }}>
-                <Text
-                  className={styles.pricingPrice}
-                  strong
-                  style={{ fontSize: "24px" }}
-                >
-                  {/* Money format util */}
-                  {formatMoney(item.price)}
-                </Text>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "end",
+                  marginTop: 10,
+                  marginBottom: 10,
+                }}
+              >
+                {/* Money format util */}
+                <Text className={styles.currencySymbol}>$</Text>
+                <Text className={styles.pricingPrice}>{item.price}</Text>
+                {/* <Text className={styles.pricingPrice}>{formatMoney(item.price)}</Text> */}
                 <Text
                   className={styles.pricingPeriod}
                 >{`/ ${item.period}`}</Text>
@@ -127,7 +130,7 @@ const PricingSection: FC = () => {
                   >
                     {item.buttonText}
                   </Text>
-                  <ArrowRightOutlined />
+                  <ArrowRightOutlined style={{ marginLeft: 10 }} />
                 </div>
               </Button>
               <Text className={styles.pricingNote} type="secondary">

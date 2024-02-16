@@ -24,44 +24,81 @@ const NavFooter: FC = () => {
           <Col xs={24} sm={12} md={8} lg={4}>
             <div className={styles.footerColumn}>
               <h4>Company</h4>
-              <p>About us</p>
-              <p>Contact us</p>
-              <p>Careers</p>
-              <p>Press</p>
+
+              <a href="/about-us" className={styles.footerLink}>
+                About us
+              </a>
+              <a href="/contact-us" className={styles.footerLink}>
+                Contact us
+              </a>
+              <a href="/careers" className={styles.footerLink}>
+                Careers
+              </a>
+              <a href="/press" className={styles.footerLink}>
+                Press
+              </a>
             </div>
           </Col>
           <Col xs={24} sm={12} md={8} lg={4}>
             <div className={styles.footerColumn}>
               <h4>Product</h4>
-              <p>Features</p>
-              <p>Pricing</p>
-              <p>News</p>
-              <p>Help desk</p>
-              <p>Support</p>
+              <a href="/features" className={styles.footerLink}>
+                Features
+              </a>
+              <a href="/pricing" className={styles.footerLink}>
+                Pricing
+              </a>
+              <a href="/news" className={styles.footerLink}>
+                News
+              </a>
+              <a href="/helpDesk" className={styles.footerLink}>
+                Help desk
+              </a>
+              <a href="/support" className={styles.footerLink}>
+                Support
+              </a>
             </div>
           </Col>
           <Col xs={24} sm={12} md={8} lg={4}>
             <div className={styles.footerColumn}>
               <h4>Services</h4>
-              <p>Digital Marketing</p>
-              <p>Content Writing</p>
-              <p>SEO for Business</p>
-              <p>UI Design</p>
+              <a href="/digitalMarketing" className={styles.footerLink}>
+                Digital Marketing
+              </a>
+              <a href="/contentWriting" className={styles.footerLink}>
+                Content Writing
+              </a>
+              <a href="/seoForBusiness" className={styles.footerLink}>
+                SEO for Business
+              </a>
+              <a href="/uiDesign" className={styles.footerLink}>
+                UI Design
+              </a>
             </div>
           </Col>
           <Col xs={24} sm={12} md={8} lg={4}>
             <div className={styles.footerColumn}>
               <h4>Legal</h4>
-              <p>Privacy Policy</p>
-              <p>Terms & Conditions</p>
-              <p>Return Policy</p>
+              <a href="/privacyPolicy" className={styles.footerLink}>
+                Privacy Policy
+              </a>
+              <a href="/termsAndConditions" className={styles.footerLink}>
+                Terms & Conditions
+              </a>
+              <a href="/returnPolicy" className={styles.footerLink}>
+                Return Policy
+              </a>
             </div>
           </Col>
           <Col xs={24} sm={12} md={8} lg={4}>
             <div className={styles.footerColumn}>
               <h4>Contact us</h4>
-              <p>support@brainwave.io</p>
-              <p>+133-394-3439-1435</p>
+              <a href="/support@brainwave.io" className={styles.footerLink}>
+                support@brainwave.io
+              </a>
+              <a href="/phone" className={styles.footerLink}>
+                +133-394-3439-1435
+              </a>
             </div>
           </Col>
         </Row>

@@ -2,8 +2,6 @@
 .footerContainer {
     background: #161C2D;
     color: #fff;
-    width: 100vw;
-    min-height: 565px;
     padding-left: 10vw;
     padding-right: 10vw;
 
@@ -39,11 +37,6 @@
         margin-bottom: 20px;
         font-weight: 600;
     }
-    p {
-        margin-top: 5px;
-        color: #fff;
-        font-weight: 400;
-    }
 }
 
 .socialIcons {
@@ -68,5 +61,17 @@
     text-align: center;
     color: #fff;
 }
-  
+
+.footerLink {
+    display: block; /* Make the link take the full width of its container */
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 400;
+    font-size: 14px;
+
+    &:hover {
+      text-decoration: underline; /* Add underline on hover */
+      cursor: pointer; /* Change cursor to pointer */
+    }
+}
   
