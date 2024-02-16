@@ -1,0 +1,72 @@
+// index.module.less
+.footerContainer {
+    background: #161C2D;
+    color: #fff;
+    width: 100vw;
+    min-height: 565px;
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+    .footerColumn {
+        margin-bottom: 20px;
+        h4 {
+          color: #fff;
+        }
+        p {
+          color: #aaa;
+        }
+    }
+    
+    @media (max-width: 576px) { // 根据需要调整断点
+    .footerColumn {
+        text-align: center;
+    }
+    }
+}
+
+.footerContent{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.antRow {
+    justify-content: space-around;
+    align-items: middle;
+    margin-left: 0;
+    margin-right: 0;
+    h4 {
+        color: #aaa;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+    p {
+        margin-top: 5px;
+        color: #fff;
+        font-weight: 400;
+    }
+}
+
+.socialIcons {
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center; // 默认居中
+
+    @media (min-width: 768px) {
+        justify-content: flex-end; // 在较大屏幕上靠右对齐
+    }
+}
+.footerDivider {
+    border-top: 1px solid #444;
+    margin-top: 10vh;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.copyright {
+    text-align: center;
+    color: #fff;
+}
+  
+  
