@@ -28,17 +28,11 @@ const LandingPage: FC = () => {
     <div className={styles.landingPage}>
       <div>
         <SectionTilte data={PricingTitle} />
-      </div>
-
-      <div>
         <PricingSection />
       </div>
 
-      <div>
+      <div style={{ marginTop: "5rem" }}>
         <SectionTilte data={FeatureTitle} />
-      </div>
-
-      <div>
         <FeaturesSection data={features} />
       </div>
     </div>
