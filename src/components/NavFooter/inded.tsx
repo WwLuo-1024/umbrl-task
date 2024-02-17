@@ -110,7 +110,7 @@ const NavFooter: FC = () => {
             lg={12}
             style={{ color: "#fff", marginBottom: "12px" }}
           >
-            <p>
+            <p style={{ fontSize: "1rem" }}>
               © 2024 Copyright, All Right Reserved, Made by Sejju_ui_ux with ❤
             </p>
           </Col>

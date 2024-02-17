@@ -79,7 +79,9 @@ const PricingSection: FC = () => {
                   className={styles.pricingPeriod}
                 >{`/ ${item.period}`}</Text>
               </div>
-              <Text>{`billed ${isMonthly ? "Monthly" : "Yearly"}`}</Text>
+              <Text style={{ fontSize: "1rem" }}>{`billed ${
+                isMonthly ? "Monthly" : "Yearly"
+              }`}</Text>
 
               <ul className={styles.featureList}>
                 {item.features.map((feature, index) => {
