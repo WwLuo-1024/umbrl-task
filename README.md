@@ -1,6 +1,6 @@
 # umbrl: React/Next.js Engineer Task
 
-This project is a frontend design task completed using React in a TypeScript compilation environment, based on designs from Figma. It includes state management with Redux Toolkit, error page handling with react-router-dom, and responsive design techniques, etc.
+This project is a frontend design task completed using React and Ant Design library in a TypeScript compilation environment, based on designs from Figma. It includes state management with Redux Toolkit, error page handling with react-router-dom, and responsive design techniques, etc.
 <br />
 <br />
 <img align="left" alt="React" width="40px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />
