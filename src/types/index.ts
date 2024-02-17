@@ -17,7 +17,7 @@ export interface planFeaturesType {
 export type IconName = keyof typeof AllIcons;
 
 export type IconProps = {
-  name: keyof typeof AllIcons; // 'name' 的类型是 'AllIcons' 中所有键的联合类型
+  name: keyof typeof AllIcons;
 };
 
 export interface FeaturesType {

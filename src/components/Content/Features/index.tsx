@@ -5,7 +5,7 @@
 import React, { FC } from "react";
 import { Row, Col, Typography } from "antd";
 import * as AllIcons from "@ant-design/icons";
-import styles from "./index.module.less"; // Make sure to create this LESS file
+import styles from "./index.module.less";
 import { FeaturesType, IconProps } from "@/types";
 
 const { Title, Paragraph } = Typography;
