@@ -58,10 +58,10 @@ $ npm start
 ## Demo
 ### Front End
 <div align="center">
-    <img src="Demo/demo01.png" height="400" width="200">
-    <img src="Demo/demo02.png" height="400" width="200">
-    <img src="Demo/demo03.png" height="400" width="200">
-    <img src="Demo/demo04.png" height="400" width="200">
+    <img src="Demo/demo01.png" height="600" width="300">
+    <img src="Demo/demo03.png" height="600" width="300">
+    <img src="Demo/demo04.png" height="600" width="300">
+    <img src="Demo/demo02.png" height="600" width="500">
     <img src="Demo/demo05.png" height="400" width="800">
     <img src="Demo/demo06.png" height="450" width="800">
     <img src="Demo/demo07.png" height="400" width="400">
